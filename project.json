@@ -1,0 +1,110 @@
+{
+  "slug": "gemston",
+  "name": "GEMSTON",
+  "symbol": "GEMSTON",
+  "master": "EQBX6K9aXVl3nXINCyPPL86C4ONVmQ8vK360u6dykFKXpHCa",
+  "decimals": 9,
+  "github": {
+    "owner": "Freebielife",
+    "repo": "GEMSTON"
+  },
+  "pools": [
+    {
+      "address": "EQBbZlAH3WCTezr1U9STPizryaBzrO65oRKmgXMu_3brxglh",
+      "dex": "stonfi",
+      "quote": "TON",
+      "evidence": "https://tonapi.io/v2/accounts/EQBbZlAH3WCTezr1U9STPizryaBzrO65oRKmgXMu_3brxglh/events?limit=100"
+    },
+    {
+      "address": "EQBYqMbb8-Mb9SqhG0U8kS2zn7ouU32nBbDL6mCgh5QS7yFS",
+      "dex": "stonfi",
+      "quote": "TON",
+      "evidence": "https://tonapi.io/v2/accounts/EQBYqMbb8-Mb9SqhG0U8kS2zn7ouU32nBbDL6mCgh5QS7yFS/events?limit=100"
+    },
+    {
+      "address": "EQB58n50y_FTSh4cjFAfMUtYuYxymNXL6E1riuQmFP1QYcVf",
+      "dex": "dedust",
+      "quote": "TON",
+      "evidence": "https://tonapi.io/v2/accounts/EQB58n50y_FTSh4cjFAfMUtYuYxymNXL6E1riuQmFP1QYcVf/events?limit=100"
+    }
+  ],
+  "primary_pool": "EQBbZlAH3WCTezr1U9STPizryaBzrO65oRKmgXMu_3brxglh",
+  "links": {
+    "website": "https://ston.fi/tokens/gemston",
+    "telegram": "https://t.me/stonfidex"
+  },
+  "services": {
+    "UQD4uGNdB4a3f52mYOZf0x1nCmdd1DAvrLppL0a1cetTYCQx": "Binance",
+    "EQDPfqI17W9lF-3OmAJu92GOn22BoTMdTmW6cY4s0V-ArRRY": "Bybit"
+  },
+  "engine_version": "1.3.0",
+  "discovery": {
+    "checkedAt": 1795630028,
+    "sources": [
+      "https://tonapi.io/v2/jettons/EQBX6K9aXVl3nXINCyPPL86C4ONVmQ8vK360u6dykFKXpHCa",
+      "https://api.geckoterminal.com/api/v2/networks/ton/tokens/EQBX6K9aXVl3nXINCyPPL86C4ONVmQ8vK360u6dykFKXpHCa/pools?page=1",
+      "https://api.geckoterminal.com/api/v2/networks/ton/tokens/EQBX6K9aXVl3nXINCyPPL86C4ONVmQ8vK360u6dykFKXpHCa/pools?page=2"
+    ],
+    "primaryPoolPolicy": "largest indexed USD liquidity among swap-verified supported TON pools"
+  },
+  "project_description": {
+    "text": "По описанию STON.fi, GEMSTON — взаимозаменяемый токен вовлечённости экосистемы протокола на TON. Пользователи получают GEMSTON при стейкинге STON и могут переводить или обменивать его. GEMSTON не предоставляет права голоса в DAO.",
+    "origin": "reviewed_sources",
+    "sources": [
+      "https://ston.fi/tokens/gemston",
+      "https://ston.fi/staking",
+      "https://tonapi.io/v2/jettons/EQBX6K9aXVl3nXINCyPPL86C4ONVmQ8vK360u6dykFKXpHCa"
+    ],
+    "checked_at": "2026-11-25"
+  },
+  "logo_file": "web/project-logo.webp",
+  "logo_origin": "token_metadata",
+  "logo_source": "https://static.ston.fi/logo/gemston_symbol.png",
+  "flag_file": "web/project-flag.webp",
+  "flag_source": "User-provided GEMSTON image; approved for banner and section flag",
+  "artwork_provenance": {
+    "file": "image(20261125-180431).png",
+    "library_file_id": "libfile_06b92304a1e8819199eeb5e398e39cc3",
+    "selection": "User explicitly selected same image for hero and flag",
+    "official_image_request": "HTTP 403; user-provided image used"
+  },
+  "service_provenance": {
+    "0:f8b8635d0786b77f9da660e65fd31d670a675dd4302facba692f46b571eb5360": {
+      "category": "custody",
+      "source": "User-provided attribution, 2026-11-22; ownership not independently verified"
+    },
+    "0:cf7ea235ed6f6517edce98026ef7618e9f6d81a1331d4e65ba718e2cd15f80ad": {
+      "category": "custody",
+      "source": "User-provided attribution, 2026-11-22; ownership not independently verified"
+    }
+  },
+  "template_repository": "Freebielife/TON-Observatory-Template",
+  "max_html_bytes": 2500000,
+  "ui": {
+    "holders_initial": 10,
+    "holders_expanded": 20
+  },
+  "methodology": {
+    "valuation": "last observed swap in primary_pool times CURRENT total supply; not circulating market cap",
+    "primary_pool": "EQBbZlAH3WCTezr1U9STPizryaBzrO65oRKmgXMu_3brxglh",
+    "sellers": "sum of successful supported native TON swap sales; service roles excluded",
+    "holders": "balances excluding known services and identified contracts; unclassified accounts may remain until verified",
+    "burns": "accepted burn notifications and zero-address transfers shown as distinct evidence",
+    "usd": "historical TON/USD rate from CoinGecko",
+    "history": "incremental confirmed swaps; missing intervals remain partial"
+  },
+  "branding": {
+    "hero": {
+      "origin": "token_metadata",
+      "source": "https://static.ston.fi/logo/gemston_symbol.png",
+      "file": "web/project-logo.webp"
+    },
+    "sectionFlag": {
+      "source": "User-provided GEMSTON image; approved for banner and section flag",
+      "catalogueKey": null,
+      "emoji": null,
+      "file": "web/project-flag.webp"
+    },
+    "channel": "https://t.me/stonfidex"
+  }
+}
